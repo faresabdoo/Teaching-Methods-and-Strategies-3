@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1e3a8a" />
+  <meta name="description" content="منصة تفاعلية لمقرر طرق واستراتيجيات التدريس - الفرقة الثالثة - تكنولوجيا التعليم" />
+  <title>طرق واستراتيجيات التدريس | منصة تفاعلية</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== الشريط العلوي ===== -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#/home" class="brand">
+        <span class="brand-icon">🎓</span>
+        <span class="brand-text">
+          <strong>طرق واستراتيجيات التدريس</strong>
+          <small>الفرقة الثالثة · تكنولوجيا التعليم</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#/home" data-nav="home">الرئيسية</a>
+        <a href="#/course" data-nav="course">المقرر</a>
+        <a href="#/cards" data-nav="cards">البطاقات</a>
+        <a href="#/exam" data-nav="exam">الاختبار</a>
+        <a href="#/dashboard" data-nav="dashboard">تقدّمي</a>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-label="القائمة" aria-expanded="false">☰</button>
+    </div>
+    <div class="progress-strip" aria-hidden="true">
+      <div id="topProgress" class="progress-strip-fill" style="width:0%"></div>
+    </div>
+  </header>
+
+  <!-- ===== المحتوى ===== -->
+  <main id="app" class="container" tabindex="-1">
+    <!-- تُعرض الصفحات هنا -->
+  </main>
+
+  <!-- ===== التنقل السفلي للجوال ===== -->
+  <nav class="bottom-nav" aria-label="تنقل الجوال">
+    <a href="#/home" data-nav="home"><span>🏠</span>الرئيسية</a>
+    <a href="#/course" data-nav="course"><span>📚</span>المقرر</a>
+    <a href="#/cards" data-nav="cards"><span>🃏</span>البطاقات</a>
+    <a href="#/exam" data-nav="exam"><span>📝</span>الاختبار</a>
+    <a href="#/dashboard" data-nav="dashboard"><span>📊</span>تقدّمي</a>
+  </nav>
+
+  <!-- ===== توست التنبيهات ===== -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- ===== نافذة مودالية ===== -->
+  <div id="modal" class="modal-overlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+      <div class="modal-actions">
+        <button id="modalClose" class="btn btn-primary">حسنًا</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>منصة تعليمية تفاعلية · حُوِّلت بالكامل من محاضرات المقرر وفق دليل تصميم بيئات التعلم التفاعلية</p>
+      <p class="muted">حفظ التقدم يعمل تلقائيًا على هذا الجهاز · بالتوفيق في الامتحان 🍀</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
